@@ -522,4 +522,6 @@ footer {
   .game-hero { padding-top: 18px; aspect-ratio: auto; min-height: 220px; }
   .game-hero .game-logo-big { width: min(420px, 76vw); }
   .nav-actions .btn-steam-nav { display: none; }
+  .contact-box { padding: 30px 18px; }
+  .contact-email-val { font-size: 19px; overflow-wrap: anywhere; }
 }

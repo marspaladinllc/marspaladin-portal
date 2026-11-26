@@ -5,6 +5,7 @@
  *   data-href-<lang>="url"   per-language link (falls back to data-href-en)
  *   data-src-<lang>="url"    per-language image (falls back to data-src-en)
  *   data-keep-lang           internal link: ?lang=<current> is appended
+ *   data-only-lang="zh tc"   shown only in these languages (hidden in the others)
  * The dropdown is built from SITE_LANGS, so a page only lists the languages it has text for in PAGE_I18N.
  */
 (function () {
@@ -46,6 +47,9 @@
       var base = el.getAttribute('data-base') || el.getAttribute('href').split('?')[0];
       el.setAttribute('data-base', base);
       el.setAttribute('href', base + (code === 'en' ? '' : '?lang=' + code));
+    });
+    document.querySelectorAll('[data-only-lang]').forEach(function (el) {
+      el.hidden = el.getAttribute('data-only-lang').split(' ').indexOf(code) < 0;
     });
     if (t.pageTitle || en.pageTitle) document.title = t.pageTitle || en.pageTitle;
     var flag = document.getElementById('currentFlag'), name = document.getElementById('currentLangName');

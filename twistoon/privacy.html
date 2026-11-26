@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twistoon Privacy Policy | Mars Paladin</title>
+<meta name="description" content="What Twistoon keeps on your PC and what it sends, from Mars Paladin.">
+<link rel="canonical" href="https://marspaladin.com/twistoon/privacy.html">
+<style>
+  :root {
+    --ink: #2b2420;
+    --ink-dim: #5d534b;
+    --bg: #fbf6ef;
+    --card: #ffffff;
+    --line: #eadfd2;
+    --accent: #d9534f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #f3ece4; --ink-dim: #b9ada1; --bg: #16120f; --card: #201a16; --line: #3a302a; --accent: #ff7a6e; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--ink); font: 16px/1.75 system-ui, "Segoe UI", "Microsoft YaHei", "Yu Gothic UI", "Malgun Gothic", sans-serif; padding: 24px 16px 56px; }
+  main { max-width: 760px; margin: 0 auto; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 32px 28px; }
+  nav { max-width: 760px; margin: 0 auto 16px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; align-items: center; }
+  nav a.home { color: var(--ink-dim); text-decoration: none; font-size: 14px; }
+  .langs { display: flex; flex-wrap: wrap; gap: 6px; }
+  .langs button { background: none; border: 1px solid var(--line); color: var(--ink-dim); border-radius: 999px; padding: 4px 12px; font: inherit; font-size: 13px; cursor: pointer; }
+  .langs button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+  h1 { font-size: 26px; line-height: 1.3; margin-bottom: 4px; }
+  .updated { color: var(--ink-dim); font-size: 14px; margin-bottom: 24px; }
+  h2 { font-size: 18px; margin: 28px 0 8px; }
+  p, li { color: var(--ink-dim); }
+  p { margin-bottom: 10px; }
+  ul { padding-left: 22px; margin-bottom: 10px; }
+  strong { color: var(--ink); }
+  a { color: var(--accent); }
+  .short { background: var(--bg); border-radius: 10px; padding: 14px 16px; margin-bottom: 8px; }
+  section[lang] { display: none; }
+  section[lang].on { display: block; }
+  code { font-size: 14px; word-break: break-all; }
+  @media (max-width: 560px) { main { padding: 24px 18px; } h1 { font-size: 22px; } }
+</style>
+</head>
+<body>
+<!-- Source of truth: Docs/privacy.md in the game repo (marspaladinllc/TwistedBalloonHouse). Change both together. -->
+<nav>
+  <a class="home" href="https://marspaladin.com/twistoon/">Mars Paladin · Twistoon</a>
+  <div class="langs" id="langs">
+    <button data-l="en">English</button>
+    <button data-l="zh-Hans">简体中文</button>
+    <button data-l="zh-Hant">繁體中文</button>
+    <button data-l="ja">日本語</button>
+    <button data-l="ko">한국어</button>
+    <button data-l="ru">Русский</button>
+  </div>
+</nav>
+<main>
+
+<section lang="en">
+  <h1>Twistoon Privacy Policy</h1>
+  <p class="updated">Mars Paladin LLC · updated November 26, 2026</p>
+  <p class="short"><strong>Short version:</strong> Twistoon has no analytics, no ads and no account. It does not collect or sell personal data. The game only goes online in the cases below, and each one starts with something you do.</p>
+
+  <h2>What stays on your PC</h2>
+  <ul>
+    <li>Your save, in <code>AppData\LocalLow\Mars Paladin LLC\Twistoon\save</code>.</li>
+    <li>Your toons, postcard images, trip photos, the photos you use for prints, mods and settings. Sharing a postcard is up to you: you copy its balloon code or save its picture and send it yourself.</li>
+    <li>Typing to pump: the game counts how many keys you press. It never records which keys, and it never sends the count anywhere.</li>
+  </ul>
+
+  <h2>Steam features</h2>
+  <p>These go through Valve's Steam, under the <a href="https://store.steampowered.com/privacy_agreement/">Steam Privacy Policy</a>.</p>
+  <ul>
+    <li>Gifts, visits and nudges to friends are sent peer to peer to the Steam friend you pick. They carry a balloon code (shape data and an optional note), an emote, or the little stamp sent back after opening a gift (just a number from 0 to 2), never an image, and they do not pass through our servers. Only Steam friends can send them to you. A visit shows your Steam name to that friend.</li>
+    <li>Cloud save: Steam syncs the save file (state.json).</li>
+    <li>Achievements: Steam is told when one unlocks.</li>
+    <li>Your friend list and nicknames are read only to show them on the mailbox Friends page.</li>
+  </ul>
+
+  <h2>Balloon codes and postcards</h2>
+  <p>A balloon code holds a toon's shape and colors, plus the note and stamps you add. Anyone you give the code to can read it. When you open the mailbox's receive page, the game looks at your clipboard once and fills it in only if it holds a balloon code.</p>
+
+  <h2>Report a problem</h2>
+  <p>Settings &gt; General &gt; Report a problem, or F8. Nothing is sent until you press <strong>Send</strong>.</p>
+  <ul>
+    <li>It goes to a Mars Paladin LLC server (balloon-report.marspaladin.com, on Cloudflare), which forwards it to a private Discord channel that only the developer reads. The server does not store reports.</li>
+    <li>Contents: category, your description, an optional contact; OS, GPU, CPU model and core count, RAM, video memory, screen size and DPI, device model, game and system language, game version; one line of game state (balloon count, skin, language, Steam on or off, quiet mode, session length); the last 200 lines of the game log with your Windows user name and Steam ID removed; and, if you leave it ticked, a screenshot of the game window only (scaled to 1280 wide), never your desktop or other windows.</li>
+    <li>The server sees your IP address, uses it only to stop spam, and does not keep it.</li>
+    <li>We use reports only to fix the game, and you can ask us to delete yours at any time.</li>
+  </ul>
+
+  <h2>Game engine</h2>
+  <p>The game is made with Unity. The Unity engine may send anonymous hardware information (such as graphics card and screen size) to Unity Technologies. It contains nothing you made or typed.</p>
+
+  <h2>Children</h2>
+  <p>We do not knowingly collect personal information from anyone, including children.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or deletion requests: <a href="mailto:support@marspaladin.com">support@marspaladin.com</a>. If this policy changes, the date at the top changes too.</p>
+</section>
+
+<section lang="zh-Hans">
+  <h1>扭扭气球屋 隐私政策</h1>
+  <p class="updated">Mars Paladin LLC · 更新于 2026 年 11 月 26 日</p>
+  <p class="short"><strong>一句话：</strong>扭扭气球屋没有统计分析、没有广告、没有账号，不收集也不卖个人数据。只有下面几种情况会联网，都是你自己点了才发生。</p>
+
+  <h2>只留在你电脑上的</h2>
+  <ul>
+    <li>存档，在 <code>AppData\LocalLow\Mars Paladin LLC\Twistoon\save</code>。</li>
+    <li>扭伴、明信片图片、旅行照片、做印花用的照片、mod 和设置。分享明信片由你自己决定：复制气球码或存下图片，自己发给朋友。</li>
+    <li>打字打气：游戏只数你按了几下，不记录按了什么，这个数也不发到任何地方。</li>
+  </ul>
+
+  <h2>Steam 功能</h2>
+  <p>通过 Valve 的 Steam，遵守 <a href="https://store.steampowered.com/privacy_agreement/">Steam 隐私政策</a>。</p>
+  <ul>
+    <li>给好友寄礼物、送扭伴去串门、抖一下：点对点发给你选的 Steam 好友，内容是扭伴的气球码（造型数据和可选的字条）、一个表情，或者拆开礼物后回的一个小章（只是 0 到 2 的一个序号），不传图片，不经过我们的服务器。只收 Steam 好友发来的。串门时好友会看到你的 Steam 名字。</li>
+    <li>云存档：Steam 同步存档文件（state.json）。</li>
+    <li>成就：解锁时告诉 Steam。</li>
+    <li>读取好友列表和昵称，只用来显示在信箱「好友」页里。</li>
+  </ul>
+
+  <h2>气球码和明信片</h2>
+  <p>气球码里是扭伴的形状和颜色，以及你加的字条和印章。你把码给了谁，谁就能看到。打开信箱的收信页时，游戏会看一次剪贴板，只有里面正好是气球码才帮你填上。</p>
+
+  <h2>报告问题</h2>
+  <p>设置 → 通用 → 报告问题，或按 F8。点<strong>发送</strong>之前什么都不发。</p>
+  <ul>
+    <li>发到 Mars Paladin LLC 的服务器（balloon-report.marspaladin.com，Cloudflare），再转进一个只有开发者能看的私有 Discord 频道。服务器不存报告。</li>
+    <li>内容：类别、你写的描述、选填的联系方式；系统、显卡、CPU 型号和核数、内存、显存、屏幕大小和 DPI、设备型号、游戏语言和系统语言、游戏版本；一行游戏状态（气球数、皮肤、语言、Steam 是否连上、勿扰模式、这次开了多久）；最近 200 行游戏日志，里面的电脑用户名和 Steam 号会先去掉；勾选带截图时，一张游戏窗口的截图（缩到 1280 宽），不含桌面和别的窗口。</li>
+    <li>服务器会看到你的 IP 地址，只用来防刷屏，不记录。</li>
+    <li>报告只用来修游戏，你随时可以让我们删掉你的报告。</li>
+  </ul>
+
+  <h2>游戏引擎</h2>
+  <p>游戏用 Unity 制作。Unity 引擎可能会把匿名的硬件信息（比如显卡、屏幕尺寸）发给 Unity Technologies，里面没有你做的或写的任何东西。</p>
+
+  <h2>儿童</h2>
+  <p>我们不会有意收集任何人（包括儿童）的个人信息。</p>
+
+  <h2>联系</h2>
+  <p>有问题或要删除报告：<a href="mailto:support@marspaladin.com">support@marspaladin.com</a>。政策有改动时，最上面的日期会跟着改。</p>
+</section>
+
+<section lang="zh-Hant">
+  <h1>扭扭氣球屋 隱私政策</h1>
+  <p class="updated">Mars Paladin LLC · 更新於 2026 年 11 月 26 日</p>
+  <p class="short"><strong>一句話：</strong>扭扭氣球屋沒有統計分析、沒有廣告、沒有帳號，不收集也不賣個人資料。只有下面幾種情況會連網，都是你自己點了才發生。</p>
+
+  <h2>只留在你電腦上的</h2>
+  <ul>
+    <li>存檔，在 <code>AppData\LocalLow\Mars Paladin LLC\Twistoon\save</code>。</li>
+    <li>扭伴、明信片圖片、旅行照片、做印花用的照片、mod 和設定。分享明信片由你自己決定：複製氣球碼或存下圖片，自己傳給朋友。</li>
+    <li>打字打氣：遊戲只數你按了幾下，不記錄按了什麼，這個數也不傳到任何地方。</li>
+  </ul>
+
+  <h2>Steam 功能</h2>
+  <p>透過 Valve 的 Steam，遵守 <a href="https://store.steampowered.com/privacy_agreement/">Steam 隱私政策</a>。</p>
+  <ul>
+    <li>寄禮物給好友、派扭伴去串門子、抖一下：點對點傳給你選的 Steam 好友，內容是扭伴的氣球碼（造型資料和可選的字條）、一個表情，或拆開禮物後回的一個小章（只是 0 到 2 的一個序號），不傳圖片，不經過我們的伺服器。只收 Steam 好友傳來的。串門子時好友會看到你的 Steam 名稱。</li>
+    <li>雲端存檔：Steam 同步存檔檔案（state.json）。</li>
+    <li>成就：解鎖時告訴 Steam。</li>
+    <li>讀取好友名單和暱稱，只用來顯示在信箱「好友」頁裡。</li>
+  </ul>
+
+  <h2>氣球碼和明信片</h2>
+  <p>氣球碼裡是扭伴的形狀和顏色，以及你加的字條和印章。你把碼給了誰，誰就能看到。打開信箱的收信頁時，遊戲會看一次剪貼簿，只有裡面正好是氣球碼才幫你填上。</p>
+
+  <h2>報告問題</h2>
+  <p>設定 → 一般 → 報告問題，或按 F8。按下<strong>傳送</strong>之前什麼都不傳。</p>
+  <ul>
+    <li>傳到 Mars Paladin LLC 的伺服器（balloon-report.marspaladin.com，Cloudflare），再轉進一個只有開發者能看的私人 Discord 頻道。伺服器不保存回報。</li>
+    <li>內容：類別、你寫的描述、選填的聯絡方式；系統、顯示卡、CPU 型號和核心數、記憶體、顯示記憶體、螢幕大小和 DPI、裝置型號、遊戲語言和系統語言、遊戲版本；一行遊戲狀態（氣球數、外觀、語言、Steam 是否連上、勿擾模式、這次開了多久）；最近 200 行遊戲紀錄，裡面的電腦使用者名稱和 Steam 號會先去掉；勾選附截圖時，一張遊戲視窗的截圖（縮到 1280 寬），不含桌面和其他視窗。</li>
+    <li>伺服器會看到你的 IP 位址，只用來防洗版，不記錄。</li>
+    <li>回報只用來修遊戲，你隨時可以請我們刪掉你的回報。</li>
+  </ul>
+
+  <h2>遊戲引擎</h2>
+  <p>遊戲用 Unity 製作。Unity 引擎可能會把匿名的硬體資訊（例如顯示卡、螢幕尺寸）傳給 Unity Technologies，裡面沒有你做的或寫的任何東西。</p>
+
+  <h2>兒童</h2>
+  <p>我們不會有意收集任何人（包括兒童）的個人資料。</p>
+
+  <h2>聯絡</h2>
+  <p>有問題或要刪除回報：<a href="mailto:support@marspaladin.com">support@marspaladin.com</a>。政策有變動時，最上面的日期會跟著更新。</p>
+</section>
+
+<section lang="ja">
+  <h1>ツイストゥーン プライバシーポリシー</h1>
+  <p class="updated">Mars Paladin LLC · 2026年11月26日 更新</p>
+  <p class="short"><strong>ひとことで：</strong>ツイストゥーンには分析ツールも広告もアカウントもありません。個人データを集めることも売ることもありません。ネットにつながるのは下の場合だけで、どれもあなたが操作したときだけです。</p>
+
+  <h2>あなたの PC にだけ残るもの</h2>
+  <ul>
+    <li>セーブデータ：<code>AppData\LocalLow\Mars Paladin LLC\Twistoon\save</code></li>
+    <li>ねじっ子、ポストカードの画像、旅の写真、プリントに使う写真、mod、設定。ポストカードを共有するかはあなた次第で、風船コードをコピーするか画像を保存して、自分で送ります。</li>
+    <li>タイピングで空気入れ：数えるのはキーを押した回数だけ。どのキーかは記録せず、回数もどこにも送りません。</li>
+  </ul>
+
+  <h2>Steam の機能</h2>
+  <p>Valve の Steam を通じて、<a href="https://store.steampowered.com/privacy_agreement/">Steam プライバシーポリシー</a>に従って扱われます。</p>
+  <ul>
+    <li>フレンドへのプレゼント、遊びに行く、ゆらす：あなたが選んだ Steam フレンドに P2P で直接届きます。中身は風船コード（形のデータと任意のメモ）、エモート、またはプレゼントを開けたあとのお返しのハンコ（0〜2 の番号だけ）で、画像は送らず、私たちのサーバーも通りません。受け取れるのは Steam フレンドからのものだけです。遊びに行くと、相手にあなたの Steam の名前が表示されます。</li>
+    <li>クラウドセーブ：Steam がセーブファイル（state.json）を同期します。</li>
+    <li>実績：解除したときに Steam に伝えます。</li>
+    <li>フレンドリストとニックネームは、ポストの「フレンド」ページに表示するためだけに読み込みます。</li>
+  </ul>
+
+  <h2>風船コードとポストカード</h2>
+  <p>風船コードには、ねじっ子の形と色、そしてあなたが付けたメモとハンコが入っています。コードを渡した相手は誰でも読めます。ポストの受け取りページを開いたとき、ゲームはクリップボードを一度だけ確認し、風船コードが入っている場合だけ入力します。</p>
+
+  <h2>問題を報告</h2>
+  <p>設定 → 一般 → 問題を報告、または F8。<strong>送信</strong>を押すまで何も送りません。</p>
+  <ul>
+    <li>Mars Paladin LLC のサーバー（balloon-report.marspaladin.com、Cloudflare）に送られ、開発者だけが見られる非公開の Discord チャンネルに転送されます。サーバーは報告を保存しません。</li>
+    <li>内容：カテゴリ、あなたが書いた説明、任意の連絡先。OS、GPU、CPU の型番とコア数、メモリ、ビデオメモリ、画面サイズと DPI、デバイスの型番、ゲームとシステムの言語、ゲームのバージョン。ゲームの状態 1 行（風船の数、スキン、言語、Steam の接続、おやすみモード、今回のプレイ時間）。ゲームログの最後の 200 行（PC のユーザー名と Steam ID は削除済み）。チェックを入れたままなら、ゲームウィンドウだけのスクリーンショット 1 枚（幅 1280 に縮小）。デスクトップやほかのウィンドウは含みません。</li>
+    <li>サーバーはあなたの IP アドレスを見ますが、連投を防ぐためだけに使い、記録しません。</li>
+    <li>報告はゲームの修正にだけ使い、いつでも削除をご依頼いただけます。</li>
+  </ul>
+
+  <h2>ゲームエンジン</h2>
+  <p>このゲームは Unity で作られています。Unity エンジンが匿名のハードウェア情報（グラフィックカードや画面サイズなど）を Unity Technologies に送る場合があります。あなたが作ったものや入力したものは含まれません。</p>
+
+  <h2>お子さまについて</h2>
+  <p>お子さまを含め、どなたの個人情報も意図して収集することはありません。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>ご質問や削除のご依頼：<a href="mailto:support@marspaladin.com">support@marspaladin.com</a>。このポリシーを変更したときは、上の日付も更新します。</p>
+</section>
+
+<section lang="ko">
+  <h1>트위스툰 개인정보 처리방침</h1>
+  <p class="updated">Mars Paladin LLC · 2026년 11월 26일 업데이트</p>
+  <p class="short"><strong>요약:</strong> 트위스툰에는 분석 도구, 광고, 계정이 없습니다. 개인 데이터를 수집하거나 판매하지 않습니다. 게임이 인터넷에 연결되는 경우는 아래뿐이며, 모두 직접 무언가를 했을 때만 일어납니다.</p>
+
+  <h2>내 PC에만 남는 것</h2>
+  <ul>
+    <li>저장 데이터: <code>AppData\LocalLow\Mars Paladin LLC\Twistoon\save</code></li>
+    <li>꼬임이, 엽서 이미지, 여행 사진, 프린트에 쓰는 사진, 모드, 설정. 엽서 공유는 직접 결정합니다. 풍선 코드를 복사하거나 이미지를 저장해서 직접 보내세요.</li>
+    <li>타자로 바람 넣기: 게임은 키를 누른 횟수만 셉니다. 어떤 키인지는 기록하지 않고, 횟수도 어디에도 보내지 않습니다.</li>
+  </ul>
+
+  <h2>Steam 기능</h2>
+  <p>Valve의 Steam을 통해 <a href="https://store.steampowered.com/privacy_agreement/">Steam 개인정보 처리방침</a>에 따라 처리됩니다.</p>
+  <ul>
+    <li>친구에게 선물, 놀러 가기, 흔들기: 내가 고른 Steam 친구에게 P2P로 직접 전달됩니다. 내용은 풍선 코드(모양 데이터와 선택 메모), 이모트, 또는 선물을 연 뒤 답장으로 보내는 작은 도장(0~2 사이 번호 하나)이며, 이미지는 보내지 않고 저희 서버를 거치지 않습니다. Steam 친구가 보낸 것만 받습니다. 놀러 가면 친구에게 내 Steam 이름이 보입니다.</li>
+    <li>클라우드 저장: Steam이 저장 파일(state.json)을 동기화합니다.</li>
+    <li>도전 과제: 달성하면 Steam에 알립니다.</li>
+    <li>친구 목록과 닉네임은 우편함 '친구' 페이지에 보여 주기 위해서만 읽습니다.</li>
+  </ul>
+
+  <h2>풍선 코드와 엽서</h2>
+  <p>풍선 코드에는 꼬임이의 모양과 색, 그리고 직접 넣은 메모와 도장이 들어 있습니다. 코드를 받은 사람은 누구나 읽을 수 있습니다. 우편함의 받기 페이지를 열면 게임이 클립보드를 한 번 확인하고, 풍선 코드가 있을 때만 채워 넣습니다.</p>
+
+  <h2>문제 보고</h2>
+  <p>설정 → 일반 → 문제 보고, 또는 F8. <strong>보내기</strong>를 누르기 전에는 아무것도 보내지 않습니다.</p>
+  <ul>
+    <li>Mars Paladin LLC 서버(balloon-report.marspaladin.com, Cloudflare)로 보내지고, 개발자만 볼 수 있는 비공개 Discord 채널로 전달됩니다. 서버는 신고 내용을 저장하지 않습니다.</li>
+    <li>내용: 분류, 작성한 설명, 선택 연락처; OS, GPU, CPU 모델과 코어 수, 메모리, 비디오 메모리, 화면 크기와 DPI, 기기 모델, 게임 언어와 시스템 언어, 게임 버전; 게임 상태 한 줄(풍선 수, 스킨, 언어, Steam 연결 여부, 방해 금지 모드, 이번 플레이 시간); Windows 사용자 이름과 Steam ID를 지운 게임 로그 마지막 200줄; 체크해 두면 게임 창만 찍은 스크린샷 한 장(가로 1280으로 축소). 바탕화면이나 다른 창은 포함하지 않습니다.</li>
+    <li>서버는 IP 주소를 보지만 도배 방지에만 쓰고 기록하지 않습니다.</li>
+    <li>신고는 게임을 고치는 데만 쓰며, 언제든 삭제를 요청할 수 있습니다.</li>
+  </ul>
+
+  <h2>게임 엔진</h2>
+  <p>이 게임은 Unity로 만들었습니다. Unity 엔진은 익명의 하드웨어 정보(그래픽 카드, 화면 크기 등)를 Unity Technologies에 보낼 수 있습니다. 직접 만들거나 입력한 내용은 들어 있지 않습니다.</p>
+
+  <h2>어린이</h2>
+  <p>어린이를 포함해 누구의 개인정보도 의도적으로 수집하지 않습니다.</p>
+
+  <h2>문의</h2>
+  <p>질문이나 삭제 요청: <a href="mailto:support@marspaladin.com">support@marspaladin.com</a>. 방침이 바뀌면 맨 위의 날짜도 함께 바뀝니다.</p>
+</section>
+
+<section lang="ru">
+  <h1>Политика конфиденциальности Twistoon</h1>
+  <p class="updated">Mars Paladin LLC · обновлено 26 ноября 2026 г.</p>
+  <p class="short"><strong>Коротко:</strong> в Twistoon нет аналитики, рекламы и аккаунтов. Игра не собирает и не продаёт личные данные. В сеть она выходит только в случаях ниже, и каждый начинается с твоего действия.</p>
+
+  <h2>Что остаётся на твоём компьютере</h2>
+  <ul>
+    <li>Сохранение: <code>AppData\LocalLow\Mars Paladin LLC\Twistoon\save</code>.</li>
+    <li>Твои крутики, картинки открыток, фото из путешествий, фото для принтов, моды и настройки. Делиться открыткой решаешь ты: копируешь её код шарика или сохраняешь картинку и отправляешь сам.</li>
+    <li>Накачка печатью: игра считает только количество нажатий. Какие клавиши нажаты, не записывается, и само число никуда не отправляется.</li>
+  </ul>
+
+  <h2>Функции Steam</h2>
+  <p>Работают через Steam от Valve по <a href="https://store.steampowered.com/privacy_agreement/">политике конфиденциальности Steam</a>.</p>
+  <ul>
+    <li>Подарки, визиты и «Встряски» друзьям отправляются напрямую (P2P) выбранному другу в Steam. В них код шарика (данные формы и необязательная записка), эмоция или маленькая печать в ответ на подарок (просто число от 0 до 2), но никогда не картинка, и они не проходят через наши серверы. Получать их можно только от друзей в Steam. При визите друг видит твоё имя в Steam.</li>
+    <li>Облачные сохранения: Steam синхронизирует файл сохранения (state.json).</li>
+    <li>Достижения: Steam узнаёт, когда ты открываешь достижение.</li>
+    <li>Список друзей и их ники читаются только для страницы «Друзья» в почтовом ящике.</li>
+  </ul>
+
+  <h2>Коды шариков и открытки</h2>
+  <p>Код шарика хранит форму и цвета крутика, а также добавленные записку и печати. Прочитать его может любой, кому ты дашь код. Когда ты открываешь страницу получения в почтовом ящике, игра один раз смотрит в буфер обмена и вставляет код, только если там именно код шарика.</p>
+
+  <h2>Сообщить о проблеме</h2>
+  <p>Настройки → Общие → Сообщить о проблеме или F8. Пока не нажмёшь <strong>Отправить</strong>, ничего не уходит.</p>
+  <ul>
+    <li>Отчёт уходит на сервер Mars Paladin LLC (balloon-report.marspaladin.com, Cloudflare) и пересылается в закрытый канал Discord, который читает только разработчик. Сервер отчёты не хранит.</li>
+    <li>Содержимое: категория, твоё описание, контакт по желанию; ОС, видеокарта, модель и число ядер процессора, ОЗУ, видеопамять, размер экрана и DPI, модель устройства, язык игры и системы, версия игры; одна строка о состоянии игры (число шариков, оформление, язык, подключён ли Steam, режим «Тишина», длительность сеанса); последние 200 строк журнала игры, из которых удалены имя пользователя Windows и Steam ID; и, если галочка оставлена, снимок только окна игры (уменьшенный до 1280 по ширине), без рабочего стола и других окон.</li>
+    <li>Сервер видит твой IP-адрес, использует его только против спама и не сохраняет.</li>
+    <li>Отчёты нужны только для исправления игры, и ты в любой момент можешь попросить удалить свой.</li>
+  </ul>
+
+  <h2>Игровой движок</h2>
+  <p>Игра сделана на Unity. Движок Unity может отправлять в Unity Technologies анонимные сведения об оборудовании (например, видеокарту и размер экрана). В них нет ничего из того, что ты создал или написал.</p>
+
+  <h2>Дети</h2>
+  <p>Мы сознательно не собираем личные данные ни у кого, включая детей.</p>
+
+  <h2>Контакты</h2>
+  <p>Вопросы и просьбы об удалении: <a href="mailto:support@marspaladin.com">support@marspaladin.com</a>. Если политика изменится, дата вверху тоже изменится.</p>
+</section>
+
+</main>
+<script>
+(function () {
+  var langs = ["en", "zh-Hans", "zh-Hant", "ja", "ko", "ru"];
+  var alias = { zh: "zh-Hans", tc: "zh-Hant" };   // the rest of marspaladin.com uses ?lang=zh / tc
+  function pick(l) {
+    l = alias[l] || l;
+    if (langs.indexOf(l) < 0) l = "en";
+    document.querySelectorAll("section[lang]").forEach(function (s) { s.classList.toggle("on", s.getAttribute("lang") === l); });
+    document.querySelectorAll("#langs button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.l === l ? "true" : "false"); });
+    document.documentElement.lang = l;
+  }
+  function guess() {
+    var q = new URLSearchParams(location.search).get("lang");
+    if (q) return q;
+    var n = (navigator.language || "en").toLowerCase();
+    if (n.indexOf("zh") === 0) return /tw|hk|mo|hant/.test(n) ? "zh-Hant" : "zh-Hans";
+    if (n.indexOf("ja") === 0) return "ja";
+    if (n.indexOf("ko") === 0) return "ko";
+    if (n.indexOf("ru") === 0) return "ru";
+    return "en";
+  }
+  document.querySelectorAll("#langs button").forEach(function (b) { b.addEventListener("click", function () { pick(b.dataset.l); }); });
+  pick(guess());
+})();
+</script>
+</body>
+</html>

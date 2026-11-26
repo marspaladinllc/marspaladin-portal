@@ -66,6 +66,7 @@ window.PAGE_I18N = {
     noteSig: "xiaoyaozi（逍遥子）",
     footerHome: "Mars Paladin 主页",
     footerSteam: "Steam 商店",
+    footerQQ: "QQ 玩家群 1135365257",
     footerPrivacy: "隐私政策",
     footerRights: "保留所有权利。"
   },
@@ -100,6 +101,7 @@ window.PAGE_I18N = {
     noteSig: "xiaoyaozi（逍遙子）",
     footerHome: "Mars Paladin 首頁",
     footerSteam: "Steam 商店",
+    footerQQ: "QQ 玩家群 1135365257",
     footerPrivacy: "隱私政策",
     footerRights: "保留所有權利。"
   },
